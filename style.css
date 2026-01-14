@@ -99,6 +99,16 @@ ul li {
   color: #0077b6;
 }
 
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #64ffda;
+  margin-bottom: 15px;
+}
+
+
 /* Resume & Contact */
 section a {
   color: #0a192f;
