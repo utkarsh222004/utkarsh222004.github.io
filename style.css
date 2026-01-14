@@ -76,6 +76,38 @@ section {
   transform: translateY(-2px);
 }
 
+/* NAV LINKS */
+.navbar ul li a {
+  position: relative;
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: #cbd5f5;
+  font-weight: 500;
+  transition: 
+    color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Hover Glow */
+.navbar ul li a:hover {
+  color: #ffffff;
+  background: rgba(139, 92, 246, 0.15);
+  box-shadow: 0 6px 22px rgba(139, 92, 246, 0.35);
+}
+
+/* LIGHT MODE */
+body.light .navbar ul li a {
+  color: #1e293b;
+}
+
+body.light .navbar ul li a:hover {
+  color: #1e293b;
+  background: #eef2ff;
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.25);
+}
+
+
 #theme-toggle {
   background: var(--primary);
   border: none;
@@ -226,6 +258,21 @@ section h2 {
   margin-bottom: 40px;
   color: var(--primary);
 }
+/* SCROLL REVEAL BASE */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: 
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+/* ACTIVE STATE */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* SKILLS */
 .skills-tags {
