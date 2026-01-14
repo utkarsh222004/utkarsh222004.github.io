@@ -228,35 +228,36 @@ section h2 {
 }
 
 /* SKILLS */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.skills-tags {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
 }
+
+
+.skills-tags span {
+background: #1e293b;
+padding: 10px 16px;
+border-radius: 20px;
+}
+
 
 .skills-grid li {
-  background: rgba(139, 92, 246, 0.12);
-  border: 1px solid rgba(139, 92, 246, 0.3);
-  color: var(--text-dark);
-  font-weight: 500;
-  padding: 15px;
-  border-radius: 20px;
-  text-align: center;
-  transition: transform var(--transition), background var(--transition);
+background: rgba(139,92,246,0.12);
+border: 1px solid rgba(139,92,246,0.3);
+color: #e0e7ff;
+font-weight: 500;
+transition: transform 0.2s ease;
 }
+
 
 .skills-grid li:hover {
-  transform: translateY(-4px);
-  background: rgba(139, 92, 246, 0.2);
+transform: translateY(-4px);
 }
 
-body.light .skills-grid li {
-  background: #e5e7eb;
-  border-color: var(--primary);
-  color: var(--text-light);
+
+body.light .skills-tags span {
+background: #e5e7eb;
 }
 
 /* PROJECTS */
