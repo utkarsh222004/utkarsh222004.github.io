@@ -3,6 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <title>Utkarsh Pachapande | AI & Data Science</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Utkarsh Pachapande – M.Tech Data Science student, GATE 2024 & 2025 qualified. AI, ML, Generative AI projects.">
+  <meta name="author" content="Utkarsh Pachapande">
+
+  <!-- Open Graph (LinkedIn Preview) -->
+  <meta property="og:title" content="Utkarsh Pachapande | AI & Data Science Portfolio">
+  <meta property="og:description" content="M.Tech Data Science | GATE 2024 & 2025 | AI, ML, Generative AI">
+  <meta property="og:image" content="profile.jpg">
+  <meta property="og:type" content="website">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -10,25 +21,28 @@
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="logo">Utkarsh</div>
-  <ul>
+
+  <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#certifications">Certifications</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <button id="theme-toggle">🌙</button>
 
+  <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
 </nav>
 
-<!-- HERO SECTION -->
-<section class="hero">
+<!-- HERO -->
+<section class="hero fade-up">
   <div class="hero-left">
     <h1>Utkarsh Pachapande</h1>
     <h2>M.Tech Data Science</h2>
+
     <p>
       AI & Data Science enthusiast with strong foundations in Machine Learning,
-      Generative AI, and Data Structures. GATE 2024 (DA) & 2025 (DA) Qualified.
+      Generative AI, and Data Structures.  
+      <strong>GATE 2024 (DA) & 2025 (DA) Qualified.</strong>
     </p>
 
     <div class="hero-buttons">
@@ -38,6 +52,7 @@
 
     <div class="hero-links">
       <a href="mailto:udpachapande@gmail.com">Email</a>
+      <a href="tel:+918306580141">Call</a>
       <a href="https://github.com/utkarsh222004" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/utkarshpachapande" target="_blank">LinkedIn</a>
     </div>
@@ -49,7 +64,7 @@
 </section>
 
 <!-- ABOUT -->
-<section id="about">
+<section id="about" class="fade-up">
   <h2>About Me</h2>
   <p>
     I am a passionate and goal-driven Data Science enthusiast currently pursuing
@@ -57,26 +72,21 @@
     Learning, Generative AI, and Data Structures.
   </p>
   <p>
-    I am proficient in Python with experience in NumPy, Pandas, TensorFlow,
-    and Keras, along with working knowledge of Java and C++ for algorithmic
-    problem-solving.
-  </p>
-  <p>
-    I have successfully qualified GATE 2024 (DA) and GATE 2025 (DA) and gained
-    practical experience through internships and applied projects.
+    Proficient in Python (NumPy, Pandas, TensorFlow, Keras) with working knowledge
+    of Java and C++ for algorithmic problem-solving.
   </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
+<section id="skills" class="fade-up">
   <h2>Skills</h2>
   <ul class="skills-grid">
     <li>Python</li>
     <li>Machine Learning</li>
     <li>Deep Learning</li>
     <li>Generative AI</li>
-    <li>NumPy & Pandas</li>
     <li>TensorFlow & Keras</li>
+    <li>NumPy & Pandas</li>
     <li>Java & C++</li>
     <li>SQL</li>
     <li>Power BI</li>
@@ -84,73 +94,81 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
+<section id="projects" class="fade-up">
   <h2>Projects</h2>
 
-  <div class="project">
-    <h3>Object Detection using YOLOv3</h3>
-    <p>Real-time object detection system identifying 75+ classes using YOLOv3 and OpenCV.</p>
-    <p><strong>Tools:</strong> Python, YOLOv3, OpenCV</p>
+  <div class="project-card">
+    <img src="yolo.jpg" alt="YOLO Object Detection">
+    <div>
+      <h3>Object Detection using YOLOv3</h3>
+      <p>Real-time detection of 75+ object classes using YOLOv3 and OpenCV.</p>
+    </div>
   </div>
 
-  <div class="project">
-    <h3>Medical Insurance Cost Prediction</h3>
-    <p>Regression model deployed via Streamlit to predict insurance costs.</p>
-    <a href="https://github.com/utkarsh222004/Medical_Insurance_Cost_Prediction_Model" target="_blank">View on GitHub</a>
+  <div class="project-card">
+    <img src="insurance.jpg" alt="Medical Insurance Prediction">
+    <div>
+      <h3>Medical Insurance Cost Prediction</h3>
+      <p>Regression model deployed using Streamlit for cost estimation.</p>
+      <a href="https://github.com/utkarsh222004/Medical_Insurance_Cost_Prediction_Model" target="_blank">View on GitHub</a>
+    </div>
   </div>
 
-  <div class="project">
-    <h3>Blinkit Sales Dashboard</h3>
-    <p>Interactive Power BI dashboard with KPIs and DAX-based analytics.</p>
+  <div class="project-card">
+    <img src="blinkit.jpg" alt="Blinkit Dashboard">
+    <div>
+      <h3>Blinkit Sales Dashboard</h3>
+      <p>Power BI dashboard with KPIs, DAX, and interactive insights.</p>
+    </div>
   </div>
 </section>
 
 <!-- CERTIFICATIONS -->
-<section id="certifications" class="cert-section">
+<section id="certifications" class="fade-up cert-section">
   <h2>Certifications</h2>
+
   <div class="cert-grid">
     <div class="cert-card">
-      <img src="cert_langchain.jpg" alt="">
-      <p>Generative AI with LangChain</p>
+      <img src="cert_langchain.jpg">
+      <p>Generative AI with LangChain & HuggingFace</p>
     </div>
-    <div class="cert-card">
-      <img src="cert_datascience_udemy.jpg" alt="">
-      <p>Data Science Bootcamp</p>
-    </div>
-    <div class="cert-card">
-      <img src="cert_coursera_python.jpg" alt="">
-      <p>Python Project for Data Science</p>
-    </div>
-  </div>
-</section>
 
-<!-- RESEARCH -->
-<section>
-  <h2>Research Publication</h2>
-  <div class="project">
-    <h3>Grocast: Interactive Sales Forecasting Dashboard</h3>
-    <a href="https://irjaeh.com/index.php/journal/article/view/856/786" target="_blank">View Publication</a>
+    <div class="cert-card">
+      <img src="cert_datascience_udemy.jpg">
+      <p>Data Science Bootcamp – Udemy</p>
+    </div>
+
+    <div class="cert-card">
+      <img src="cert_coursera_python.jpg">
+      <p>Python Project for Data Science – Coursera</p>
+    </div>
+
+    <div class="cert-card">
+      <img src="cert_ibm_python.jpg">
+      <p>Python for Data Science, AI & Development – IBM</p>
+    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="fade-up">
   <h2>Contact</h2>
-  <p>Email: udpachapande@gmail.com</p>
-  <p>Phone: +91 8306580141</p>
+  <p>Email: <a href="mailto:udpachapande@gmail.com">udpachapande@gmail.com</a></p>
+  <p>Phone: <a href="tel:+918306580141">+91 8306580141</a></p>
   <p>Pune, Maharashtra, India</p>
 </section>
 
 <footer>
   © 2026 Utkarsh Pachapande
 </footer>
+
+<!-- THEME + ANIMATION SCRIPT -->
 <script>
   const toggle = document.getElementById("theme-toggle");
-  toggle.onclick = () => {
+  toggle.addEventListener("click", () => {
     document.body.classList.toggle("light");
-    toggle.textContent =
-      document.body.classList.contains("light") ? "🌞" : "🌙";
-  };
+    toggle.textContent = document.body.classList.contains("light") ? "🌞" : "🌙";
+  });
 </script>
 
 </body>
