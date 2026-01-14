@@ -276,36 +276,50 @@ section h2 {
 
 /* SKILLS */
 .skills-tags {
-display: flex;
-flex-wrap: wrap;
-gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 20px;
 }
 
-
+/* Skill pill */
 .skills-tags span {
-background: #1e293b;
-padding: 10px 16px;
-border-radius: 20px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e5e7eb;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
 }
 
-
-.skills-grid li {
-background: rgba(139,92,246,0.12);
-border: 1px solid rgba(139,92,246,0.3);
-color: #e0e7ff;
-font-weight: 500;
-transition: transform 0.2s ease;
+/* Hover glow – SAME AS PROJECT CARDS */
+.skills-tags span:hover {
+  transform: translateY(-3px);
+  border-color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.12);
+  box-shadow: 0 8px 28px rgba(139, 92, 246, 0.35);
+  cursor: default;
 }
 
-
-.skills-grid li:hover {
-transform: translateY(-4px);
-}
-
-
+/* LIGHT MODE */
 body.light .skills-tags span {
-background: #e5e7eb;
+  background: #ffffff;
+  color: #1e293b;
+  border: 1px solid #e5e7eb;
 }
+
+body.light .skills-tags span:hover {
+  background: #eef2ff;
+  border-color: #6366f1;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.25);
+}
+
 
 
 
