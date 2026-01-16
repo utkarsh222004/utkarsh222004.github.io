@@ -826,6 +826,16 @@ body.light .contact-card {
   flex-direction: column;
   gap: 18px;
   padding-top: 40px;
+
+  background: var(--secondary);
+  padding: 16px;
+  border-radius: 16px;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+body.light .quick-contact {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
 }
 
 .quick-contact h3 {
