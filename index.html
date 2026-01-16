@@ -360,12 +360,67 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:udpachapande@gmail.com">udpachapande@gmail.com</a></p>
-  <p>Phone: <a href="tel:+918306580141">+91 8306580141</a></p>
-  <p>Pune, Maharashtra, India</p>
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section reveal">
+  <div class="contact-container">
+
+    <!-- LEFT: CONTACT FORM -->
+    <div class="contact-card">
+      <h2>Contact</h2>
+      <p class="contact-subtitle">Let’s connect — I usually respond within 24 hours</p>
+
+      <form id="contact-form"
+        action="https://formspree.io/f/xqkrabcd"
+        method="POST">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- SUCCESS MESSAGE -->
+      <div class="success-message" id="success">
+        <div class="checkmark">✓</div>
+        <p>Message sent successfully!</p>
+      </div>
+    </div>
+
+    <!-- RIGHT: QUICK CONNECT -->
+    <div class="quick-contact">
+      <h3>Quick Connect</h3>
+
+      <a href="https://wa.me/918306580141" target="_blank" class="qc-btn whatsapp">
+        <span>WhatsApp</span>
+      </a>
+
+      <a href="tel:+918306580141" class="qc-btn call">
+        <span>Call</span>
+      </a>
+
+      <a href="mailto:udpachapande@gmail.com" class="qc-btn email">
+        <span>Email</span>
+      </a>
+
+      <p class="location">📍 Pune, Maharashtra, India</p>
+    </div>
+
+  </div>
 </section>
+
+
+<script>
+  const form = document.getElementById("contact-form");
+  const success = document.getElementById("success");
+
+  form.addEventListener("submit", function () {
+    setTimeout(() => {
+      form.style.display = "none";
+      success.style.display = "block";
+    }, 500);
+  });
+</script>
 
 
 <script>
