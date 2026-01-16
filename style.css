@@ -723,8 +723,14 @@ body.light .cert-card {
 /* CONTACT */
 /* CONTACT SECTION */
 .contact-section {
-  padding: 100px 60px;
-  background: radial-gradient(circle at top, #111827, #020617);
+         /* padding: 100px 60px;
+          background: radial-gradient(circle at top, #111827, #020617); */
+
+  background: var(--secondary);
+  padding: 24px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
                        /*       .contact-container {
@@ -745,7 +751,7 @@ body.light .cert-card {
 
 /* FORM CARD */
 .contact-card {
-  position: relative; 
+  /*position: relative; */
 
   background: var(--secondary);
   padding: 16px;
@@ -831,10 +837,10 @@ body.light .contact-card {
 
 /* QUICK CONTACT */
 .quick-contact {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  padding-top: 40px;
+                /*display: flex;
+                flex-direction: column;
+                gap: 18px;
+                padding-top: 40px; */
 
   background: var(--secondary);
   padding: 16px;
