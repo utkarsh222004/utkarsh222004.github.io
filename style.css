@@ -779,7 +779,7 @@ body.light .cert-card {
 #contact-form input,
 #contact-form textarea {
   width: 100%;
-  background: #020617;
+  background: #0b1020; <!-- #020617; -->
   border: 1px solid rgba(139, 92, 246, 0.3);
   border-radius: 10px;
   padding: 14px 16px;
