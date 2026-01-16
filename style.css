@@ -772,7 +772,7 @@ body.light .cert-card {
 
 .contact-subtitle {
   margin: 10px 0 30px;
-  color: #cbd5f5;
+  color: #767676;  <!-- #cbd5f5; -->
 }
 
 
@@ -850,7 +850,7 @@ body.light .contact-card {
 }
 .quick-contact-text {
   margin: 10px 0 30px;
-  color: #cbd5f5;
+  color: #767676;  <!-- #cbd5f5; -->
 }
 
 body.light .quick-contact {
