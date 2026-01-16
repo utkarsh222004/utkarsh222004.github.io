@@ -725,9 +725,20 @@ body.light .cert-card {
 
 /* CONTACT INFO */
 /* CONTACT SECTION */
+/* ================================
+   CONTACT SECTION (THEME AWARE)
+================================ */
+
+/* SECTION */
 .contact-section {
   padding: 100px 60px;
-  background: radial-gradient(circle at top, #111827, #020617);
+  background: var(--bg-light);
+  transition: background var(--transition);
+}
+
+/* DARK MODE */
+[data-theme="dark"] .contact-section {
+  background: var(--bg-dark);
 }
 
 .contact-container {
@@ -740,76 +751,81 @@ body.light .cert-card {
 
 /* FORM CARD */
 .contact-card {
-  background: rgba(17, 24, 39, 0.7);
+  background: #ffffff;
   border-radius: 18px;
   padding: 40px;
-  box-shadow: 0 20px 60px rgba(139, 92, 246, 0.15);
-  position: relative;
+  border: 1px solid rgba(30, 41, 59, 0.1);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+  transition: background var(--transition), border var(--transition);
+}
+
+[data-theme="dark"] .contact-card {
+  background: var(--secondary);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
 }
 
 .contact-card h2 {
   font-size: 2.2rem;
-  color: #8b5cf6;
+  color: var(--primary);
 }
 
 .contact-subtitle {
   margin: 10px 0 30px;
-  color: #cbd5f5;
+  color: var(--text-light);
 }
 
+[data-theme="dark"] .contact-subtitle {
+  color: var(--text-dark);
+}
+
+/* INPUTS */
 #contact-form input,
 #contact-form textarea {
   width: 100%;
-  background: #020617;
-  border: 1px solid rgba(139, 92, 246, 0.3);
+  background: transparent;
+  border: 1px solid rgba(30, 41, 59, 0.2);
   border-radius: 10px;
   padding: 14px 16px;
   margin-bottom: 16px;
-  color: #e5e7eb;
+  color: var(--text-light);
   font-size: 0.95rem;
+  transition: border var(--transition), box-shadow var(--transition);
+}
+
+[data-theme="dark"] #contact-form input,
+[data-theme="dark"] #contact-form textarea {
+  border: 1px solid rgba(255,255,255,0.15);
+  color: var(--text-dark);
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: #64748b;
 }
 
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline: none;
-  border-color: #8b5cf6;
-  box-shadow: 0 0 0 2px rgba(139,92,246,0.3);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.25);
 }
 
+/* SUBMIT BUTTON */
 #contact-form button {
-  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  background: var(--primary);
   border: none;
-  padding: 14px 28px;
-  border-radius: 30px;
+  padding: 14px 30px;
+  border-radius: 999px;
   color: white;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform var(--transition), box-shadow var(--transition);
 }
 
 #contact-form button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(139,92,246,0.5);
-}
-
-/* SUCCESS MESSAGE */
-.success-message {
-  display: none;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.success-message .checkmark {
-  width: 48px;
-  height: 48px;
-  background: #22c55e;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  font-size: 1.4rem;
-  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px var(--shadow);
 }
 
 /* QUICK CONTACT */
@@ -821,8 +837,11 @@ body.light .cert-card {
 }
 
 .quick-contact h3 {
-  color: #e5e7eb;
-  margin-bottom: 10px;
+  color: var(--text-light);
+}
+
+[data-theme="dark"] .quick-contact h3 {
+  color: var(--text-dark);
 }
 
 .qc-btn {
@@ -833,23 +852,32 @@ body.light .cert-card {
   border-radius: 14px;
   font-weight: 600;
   text-decoration: none;
-  color: white;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  color: var(--text-light);
+  background: transparent;
+  border: 1px solid rgba(30,41,59,0.2);
+  transition: background var(--transition), transform var(--transition), border var(--transition);
+}
+
+[data-theme="dark"] .qc-btn {
+  color: var(--text-dark);
+  border: 1px solid rgba(255,255,255,0.15);
 }
 
 .qc-btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.4);
+  transform: translateY(-2px);
+  background: rgba(99,102,241,0.1);
+  border-color: var(--primary);
 }
 
-.whatsapp { background: #22c55e; }
-.call { background: #3b82f6; }
-.email { background: #8b5cf6; }
-
+/* LOCATION */
 .location {
   margin-top: 25px;
-  color: #94a3b8;
+  color: #64748b;
   font-size: 0.9rem;
+}
+
+[data-theme="dark"] .location {
+  color: #94a3b8;
 }
 
 /* RESPONSIVE */
@@ -857,7 +885,6 @@ body.light .cert-card {
   .contact-container {
     grid-template-columns: 1fr;
   }
-
   .quick-contact {
     padding-top: 0;
   }
