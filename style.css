@@ -760,6 +760,7 @@ body.light .cert-card {
   color: #cbd5f5;
 }
 
+
 #contact-form input,
 #contact-form textarea {
   width: 100%;
@@ -832,15 +833,25 @@ body.light .contact-card {
   border-radius: 16px;
   transition: transform var(--transition), box-shadow var(--transition);
 }
+.quick-contact-text {
+  margin: 10px 0 30px;
+  color: #cbd5f5;
+}
 
 body.light .quick-contact {
   background: #ffffff;
   border: 1px solid #e5e7eb;
 }
 
-.quick-contact h3 {
-  color: #e5e7eb;
+.quick-contact:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 15px 40px var(--shadow);
+}
+
+.quick-contact h2 {
+  color: #8b5cf6;
   margin-bottom: 10px;
+  font-size: 2.2rem
 }
 
 .qc-btn {
