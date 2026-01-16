@@ -786,6 +786,21 @@ body.light .cert-card {
   margin-bottom: 16px;
   color: #e5e7eb;
   font-size: 0.95rem;
+
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* PLACEHOLDER */
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* LIGHT MODE – ONLY BACKGROUND CHANGES */
+body.light #contact-form input,
+body.light #contact-form textarea {
+  background: #f8fafc;   /* light surface */
+  color: #1e293b;
 }
 
 #contact-form input:focus,
