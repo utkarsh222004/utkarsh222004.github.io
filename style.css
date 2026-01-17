@@ -76,22 +76,6 @@ section {
   transform: translateY(-2px);
 }
 
-/* text left logo in navigation bar -->
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 700;
-  color: var(--primary);
-  font-size: 1.4rem;
-}
-
-/* Logo Image */
-.logo-img {
-  width: 34px;
-  height: 34px;
-  object-fit: contain;
-}
 
 
 /* NAV LINKS */
