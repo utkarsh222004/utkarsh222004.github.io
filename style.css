@@ -420,6 +420,7 @@ body.light .about-highlight p {
 /* For mobile view */                                          */
 section {
   padding: 80px 60px;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
