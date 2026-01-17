@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <title>Utkarsh Pachapande | AI & Data Science</title>
 
+  <!-- Mobile view-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
   <!-- SEO -->
   <meta name="description" content="Utkarsh Pachapande – M.Tech Data Science, GATE 2024 & 2025 qualified. AI, ML, Generative AI projects.">
   <meta name="author" content="Utkarsh Pachapande">
@@ -47,6 +51,12 @@
     <li><a href="#certifications">Certifications</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+
+  <!-- for mobile view-->
+  <button class="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </button>
+
 
   <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
 </nav>
@@ -430,6 +440,15 @@
     }, 500);
   });
 </script>
+
+<!-- For Mobile view -->
+<script>
+document.querySelector(".menu-toggle")
+  .addEventListener("click", () => {
+    document.querySelector(".nav-links").classList.toggle("show");
+});
+</script>
+
 
 
 
