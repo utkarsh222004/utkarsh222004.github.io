@@ -59,12 +59,11 @@ section {
   color: var(--primary);
 }
 
-                                                              /*    .nav-links {
-                                                                    display: flex;
-                                                                    gap: 30px;
-                                                                    list-style: none;
-                                                                  }
-                                                              */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
 
 /* LIGHT MODE – MOBILE MENU BACKGROUND */
 body.light .nav-links {
@@ -74,6 +73,34 @@ body.light .nav-links {
 body.light .nav-links a {
   color: #1e293b;               /* dark readable text */
 }
+/* ===============================
+   DESKTOP NAVBAR FIX (CRITICAL)
+================================ */
+@media (min-width: 900px) {
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    position: static;          /* 🔥 remove fixed */
+    height: auto;
+    inset: auto;
+    background: transparent;
+
+    display: flex !important;
+    flex-direction: row;       /* 🔥 horizontal */
+    align-items: center;
+    gap: 28px;
+
+    padding: 0;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+}
+
 
 
 
